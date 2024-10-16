@@ -244,7 +244,7 @@ public class SokobanSolver {
             String[][] grid = parseGrid(sokobanGrid);
 
             // Generate the PDDL problem file
-            generatePDDL(grid, "sokoban-problem.pddl");
+            generatePDDL(grid, "solution/sokoban-problem.pddl");
 
             // Solve the PDDL problem
             Plan solution = solveWithPDDL4J("solution/sokoban.pddl", "solution/sokoban-problem.pddl");
