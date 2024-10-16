@@ -1,19 +1,5 @@
 Play the game on [CodinGame](https://www.codingame.com/training/hard/sokoban)
 
-Maven is needed.
-
-Install pddl4j (https://github.com/pellierd/pddl4j) in your local maven repo:
-```
-mvn install:install-file \
-   -Dfile=<path-to-file-pddl4j-4.0.0.jar> \
-   -DgroupId=fr.uga \
-   -DartifactId=pddl4j \
-   -Dversion=4.0.0 \
-   -Dpackaging=jar \
-   -DgeneratePom=true
- ```  
-Work with maven: mvn clean, mvn compile, mvn test, mvn package
-
 You should add dictionary solution/'s classpath into trajet/classes
 
 Our domain definition file and our java file are in the dictionary solution/
