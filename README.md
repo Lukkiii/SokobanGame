@@ -20,6 +20,8 @@ To test our program you can just :
 
 Open a terminal and in the root dictionary :  
 
+On MacOS : 
+
 1. At first run : 
 ```
 javac -cp "lib/pddl4j-4.0.0.jar:lib/json-20240303.jar" solution/SokobanSolver.java  
@@ -28,6 +30,15 @@ javac -cp "lib/pddl4j-4.0.0.jar:lib/json-20240303.jar" solution/SokobanSolver.ja
 2. Then run : 
 ```
 java -cp "lib/pddl4j-4.0.0.jar:lib/json-20240303.jar" solution/SokobanSolver.java  
+```
+
+On Windows : 
+```
+javac -cp "lib/pddl4j-4.0.0.jar;lib/json-20240303.jar" solution/SokobanSolver.java  
+```
+
+```
+java -cp "lib/pddl4j-4.0.0.jar;lib/json-20240303.jar" solution/SokobanSolver.java  
 ```
 
 3. After run with : 
