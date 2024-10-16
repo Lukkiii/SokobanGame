@@ -10,7 +10,7 @@ Our domain definition file and our java file are in the dictionary src/main/java
 
 We put test1 default and if you want to test other tests : 
 
-1. Change in file src/main/java/sokoban/SokobanSolver.java line 239 : filePath = "config/test*.json";  
+1. Change in file src/main/java/sokoban/SokobanSolver.java line 240 : filePath = "config/test*.json";  
 
 2. Change in file src/main/java/sokoban/SokobanMain.java line 9 : gameRunner.setTestCase("test*.json");
 
