@@ -191,7 +191,7 @@ public class SokobanSolver {
 
     public static void editAgent(String solutionString) {
         // Edit the agent to move according to the solution string
-        String filePath = "../src/main/java/sokoban/Agent.java";
+        String filePath = "src/main/java/sokoban/Agent.java";
 
         try {
             // Read all lines from the file
@@ -236,7 +236,7 @@ public class SokobanSolver {
     public static void main(String[] args) {
         try {
             // Load the JSON level
-            String filePath = "../config/test1.json";
+            String filePath = "config/test1.json";
             JSONObject level = readLevel(filePath);
 
             // Parse the Sokoban grid from "testIn"
@@ -254,7 +254,7 @@ public class SokobanSolver {
             generatePDDL(grid, "sokoban-problem.pddl");
 
             // Solve the PDDL problem
-            Plan solution = solveWithPDDL4J("sokoban.pddl", "sokoban-problem.pddl");
+            Plan solution = solveWithPDDL4J("solution/sokoban.pddl", "solution/sokoban-problem.pddl");
 
             if (solution != null) {
                 System.out.println("Plan found ");

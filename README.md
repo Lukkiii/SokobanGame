@@ -14,6 +14,8 @@ mvn install:install-file \
  ```  
 Work with maven: mvn clean, mvn compile, mvn test, mvn package
 
+You should add dictionary solution/'s classpath into trajet/classes
+
 Our domain definition file and our java file are in the dictionary solution/
 
 - solution/sokoban.pddl : domain definition
@@ -32,15 +34,22 @@ To test our program you can just :
 
 Open a terminal and in the root dictionary :  
 
-1. run javac -cp "lib/pddl4j-4.0.0.jar:lib/json-20240303.jar" solution/SokobanSolver.java  
+1. At first run : 
+```
+javac -cp "lib/pddl4j-4.0.0.jar:lib/json-20240303.jar" solution/SokobanSolver.java  
+```
 
-2. run java -cp "lib/pddl4j-4.0.0.jar:lib/json-20240303.jar" solution/SokobanSolver.java  
+2. Then run : 
+```
+java -cp "lib/pddl4j-4.0.0.jar:lib/json-20240303.jar" solution/SokobanSolver.java  
+```
 
-Open another terminal :  
+3. After run with : 
+```
+mvn package
+```
 
-1. At first run with : mvn package
-
-2. And after run : 
+4. And finally run : 
 ```
 java --add-opens java.base/java.lang=ALL-UNNAMED \
       -server -Xms2048m -Xmx2048m \
@@ -48,4 +57,4 @@ java --add-opens java.base/java.lang=ALL-UNNAMED \
       sokoban.SokobanMain
 ```
 
-And see planning solutions at http://localhost:8888/test.html
+And then you can see planning solutions at http://localhost:8888/test.html
