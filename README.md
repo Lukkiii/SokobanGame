@@ -38,7 +38,7 @@ javac -cp "lib/pddl4j-4.0.0.jar;lib/json-20240303.jar" solution/SokobanSolver.ja
 ```
 
 ```
-java -cp "lib/pddl4j-4.0.0.jar;lib/json-20240303.jar" solution/SokobanSolver.java  
+java -cp "lib/pddl4j-4.0.0.jar;lib/json-20240303.jar" solution.SokobanSolver  
 ```
 
 3. After run with : 
