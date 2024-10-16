@@ -32,7 +32,7 @@ java -cp "lib/pddl4j-4.0.0.jar:lib/json-20240303.jar" src/main/java/sokoban/Soko
 
 On Windows : 
 ```
-javac -cp "lib/pddl4j-4.0.0.jar;lib/json-20240303.jar" ssrc/main/java/sokoban/SokobanSolver.java  
+javac -cp "lib/pddl4j-4.0.0.jar;lib/json-20240303.jar" src/main/java/sokoban/SokobanSolver.java  
 ```
 
 ```
